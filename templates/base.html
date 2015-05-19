@@ -7,7 +7,7 @@
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" type="text/css">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Eagle+Lake|Vollkorn:400,400italic,700,700italic" type="text/css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic" type="text/css">
 <style>
 body, code {
 	font-family: 'Vollkorn', serif !important;
@@ -18,31 +18,33 @@ body, code {
     max-width: 730px;
   }
 }
-.footer {
+header {
+}
+section#content {
+	padding-top: 2em;
+}
+footer {
 	padding-top: 19px;
 	font-size: 13px;
 	color: #777;
 	border-top: 1px solid #e5e5e5;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Eagle Lake', cursive;
-}
 </style>
 </head>
 <body>
 <div class="container">
-	<div class="header">
+	<header>
         <ul class="nav nav-pills pull-right">
           <li><a href="index.html">Règles</a></li>
           <li><a href="regles-supplementaires.html">Règles supplémentaires</a></li>
         </ul>
-    </div>
+    </header>
 
-	<div id="content">{{ body }}</div>
+	<section id="content">{{ body }}</section>
 
-	<div class="footer">
+	<footer>
 		<p>Traduction en français par <a href="http://jehaisleprintemps.net/">Bruno Bord</a> du jeu de rôle permanent, temps-réel, solo <a href="http://tinydragonsrpg.tumblr.com/">Tiny Dragons</a>, par <a href="https://plus.google.com/+PaulBeakley/posts">Paul Beakley</a>.</p>
-	</div>
+	</footer>
 </div>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
